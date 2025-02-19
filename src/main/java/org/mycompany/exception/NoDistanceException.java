@@ -2,8 +2,8 @@ package org.mycompany.exception;
 
 public class NoDistanceException extends RuntimeException {
 
-    public NoDistanceException(String message) {
-        super(message);
+    public NoDistanceException(ExceptionMessages message) {
+        super(message.getExceptionMessage());
     }
 
     @Override

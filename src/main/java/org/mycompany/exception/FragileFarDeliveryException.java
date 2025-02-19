@@ -2,8 +2,8 @@ package org.mycompany.exception;
 
 public class FragileFarDeliveryException extends RuntimeException {
 
-    public FragileFarDeliveryException(String message) {
-        super(message);
+    public FragileFarDeliveryException(ExceptionMessages message) {
+        super(message.getExceptionMessage());
     }
 
     @Override
